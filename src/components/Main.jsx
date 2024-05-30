@@ -1,0 +1,90 @@
+"use client";
+
+import Image from "next/image";
+import React, {
+  useRef,
+  useContext,
+  useState,
+  useCallback,
+  useEffect,
+} from "react";
+import { ScrollContext } from "../utils/scroll-observer";
+
+const Main = () => {
+  return (
+    <div className="text-white bg-zinc-900">
+      <div className=" max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col lg:flex-row text-center justify-center items-center">
+        <div>
+        <h2 className="leading-tight text-6xl md:text-8xl font-bold">
+          ✨&nbsp;Witam!&nbsp;🎉
+        </h2>
+        <p className="mt-4 md:mt-10 leading-tight text-2xl md:text-4xl tracking-tight font-semibold">
+          Mam na imię Wojciech. Mieszkam w Warszawie i w przyszłości chciałbym
+          pracować jako programista.
+        </p>
+        <div className="grid grid-cols-4 md:grid-cols-8 gap-4 mt-10">
+          <Image
+            src="/assets/logos/javascript.png"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/react.png"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/nextjs.svg"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/Tailwind.png"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/Postgresql.png"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/vercel.svg"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/sanity.png"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+          <Image
+            src="/assets/logos/docker.svg"
+            width={100}
+            height={100}
+            alt="docker"
+          />
+        </div>
+        </div>
+        <div>
+          <Image
+            src="/assets/avatar.jpg"
+            width={1000}
+            height={1000}
+            alt="Wojciech Jechowski"
+            className="rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Main;
