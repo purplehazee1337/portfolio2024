@@ -41,7 +41,7 @@ const Hero = () => {
         playsInline
         className="absolute w-full h-full object-cover"
       >
-        <source src="/assets/vid5.mp4" type='video/mp4; codecs="avc1"' />
+        <source src="/assets/video/hero.mp4" type='video/mp4; codecs="avc1"' />
       </video>
       <div className="p-12 transition-all duration-1000 font-bold z-10 text-white text-right flex-1 flex flex-col items-right justify-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.5)]">
         <h1 className="text-4xl xl:text-5xl">
@@ -57,7 +57,7 @@ const Hero = () => {
         }`}
       >
         <Image
-          src="/assets/arrow-down.svg"
+          src="/assets/icons/arrow-down.svg"
           width={100 / 3}
           height={100 / 3}
           alt="scroll-down"

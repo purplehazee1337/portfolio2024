@@ -1,19 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import React, {
-  useRef,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
-} from "react";
-import { ScrollContext } from "../utils/scroll-observer";
 
 const Main = () => {
   return (
     <div className="text-white bg-neutral-950">
-      <div className=" max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col lg:flex-row text-center lg:text-left justify-center items-center">
+      <div className="min-h-screen max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col lg:flex-row text-center lg:text-left justify-center items-center">
         <div>
         <h2 className="leading-tight text-6xl md:text-8xl font-bold">
           Witam!

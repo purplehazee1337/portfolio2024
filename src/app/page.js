@@ -1,16 +1,17 @@
 import ScrollObserver from "@/utils/scroll-observer";
 import Hero from "@/components/hero";
-import About from '../components/About'
-import Main from '../components/Main'
+import About from "../components/About";
+import Main from "../components/Main";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
     <ScrollObserver>
       <main>
         <Hero />
-        <Main/>
-        <About/>
-        <div className="bg-neutral-950 min-h-screen"></div>
+        <Main />
+        <About />
+        <Project />
       </main>
     </ScrollObserver>
   );
