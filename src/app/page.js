@@ -1,5 +1,5 @@
 import ScrollObserver from "@/utils/scroll-observer";
-import Hero from "@/components/hero";
+import Hero from "../components/hero";
 import About from "../components/About";
 import Main from "../components/Main";
 import Project from "../components/Project";
