@@ -36,7 +36,7 @@ const About = () => {
   }
 
   return (
-    <div ref={refContainer} className="bg-zinc-900 text-white">
+    <div ref={refContainer} className="bg-neutral-950 text-white">
       <div className="min-h-screen max-w-6xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl tracking-tight font-semibold">
         <div className="leading-tight">
           <div style={{ opacity: opacityForBlock(progress, 0) }}>

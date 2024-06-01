@@ -41,13 +41,13 @@ const Hero = () => {
         playsInline
         className="absolute w-full h-full object-cover"
       >
-        <source src="/assets/vid3.mp4" type='video/mp4; codecs="avc1"' />
+        <source src="/assets/vid5.mp4" type='video/mp4; codecs="avc1"' />
       </video>
       <div className="p-12 transition-all duration-1000 font-bold z-10 text-white text-right flex-1 flex flex-col items-right justify-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.5)]">
-        <h1 className="text-4xl xl:text-5xl border-r-4 pr-1">
+        <h1 className="text-4xl xl:text-5xl">
           Wojciech Jechowski
         </h1>
-        <h2 className="text-2xl xl:text-3xl border-r-4 pr-1 tracking-tight">
+        <h2 className="text-2xl xl:text-3xl tracking-tight">
           Fullstack developer
         </h2>
       </div>

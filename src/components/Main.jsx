@@ -12,11 +12,11 @@ import { ScrollContext } from "../utils/scroll-observer";
 
 const Main = () => {
   return (
-    <div className="text-white bg-zinc-900">
-      <div className=" max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col lg:flex-row text-center justify-center items-center">
+    <div className="text-white bg-neutral-950">
+      <div className=" max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col lg:flex-row text-center lg:text-left justify-center items-center">
         <div>
         <h2 className="leading-tight text-6xl md:text-8xl font-bold">
-          ✨&nbsp;Witam!&nbsp;🎉
+          Witam!
         </h2>
         <p className="mt-4 md:mt-10 leading-tight text-2xl md:text-4xl tracking-tight font-semibold">
           Mam na imię Wojciech. Mieszkam w Warszawie i w przyszłości chciałbym
@@ -77,7 +77,7 @@ const Main = () => {
           <Image
             src="/assets/avatar.jpg"
             width={1000}
-            height={1000}
+            height={2000}
             alt="Wojciech Jechowski"
             className="rounded-xl"
           />

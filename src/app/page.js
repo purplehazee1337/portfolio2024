@@ -10,7 +10,7 @@ export default function Home() {
         <Hero />
         <Main/>
         <About/>
-        <div className="bg-zinc-900 min-h-screen"></div>
+        <div className="bg-neutral-950 min-h-screen"></div>
       </main>
     </ScrollObserver>
   );
