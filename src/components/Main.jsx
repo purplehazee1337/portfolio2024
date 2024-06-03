@@ -14,7 +14,7 @@ const Main = () => {
           Mam na imię Wojciech. Mieszkam w Warszawie i w przyszłości chciałbym
           pracować jako programista.
         </p>
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-4 mt-10">
+        <div className="grid grid-cols-4 sm:grid-cols-8 gap-4 mt-10 justify-center items-center">
           <Image
             src="/assets/logos/javascript.png"
             width={100}

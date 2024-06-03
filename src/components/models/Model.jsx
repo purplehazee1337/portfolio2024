@@ -12,8 +12,8 @@ import * as THREE from 'three'
 const Model = (props) => {
   const { nodes, materials } = useGLTF('/assets/apple_iphone_13_pro_max.glb')
 
-  const videoTexture = useVideoTexture("/assets/video/projekt.mp4");
-
+  const videoTexture = useVideoTexture(`/assets/video/${props.video}.mp4`);
+  
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -201,6 +201,6 @@ const Model = (props) => {
   )
 }
 
-useGLTF.preload('/apple_iphone_13_pro_max.glb')
+useGLTF.preload('/assets/apple_iphone_13_pro_max.glb')
 
 export default Model;

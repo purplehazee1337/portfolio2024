@@ -2,7 +2,7 @@ import ScrollObserver from "@/utils/scroll-observer";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Main from "../components/Main";
-import Project from "../components/Project";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <Hero />
         <Main />
         <About />
-        <Project />
+        <Projects />
       </main>
     </ScrollObserver>
   );
