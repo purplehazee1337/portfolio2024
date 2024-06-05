@@ -14,56 +14,6 @@ const Main = () => {
           Mam na imię Wojciech. Mieszkam w Warszawie i w przyszłości chciałbym
           pracować jako programista.
         </p>
-        <div className="grid grid-cols-4 sm:grid-cols-8 gap-4 mt-10 justify-center items-center">
-          <Image
-            src="/assets/logos/javascript.png"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/react.png"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/nextjs.svg"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/Tailwind.png"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/Postgresql.png"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/vercel.svg"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/sanity.png"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-          <Image
-            src="/assets/logos/docker.svg"
-            width={100}
-            height={100}
-            alt="docker"
-          />
-        </div>
         </div>
         <div>
           <Image

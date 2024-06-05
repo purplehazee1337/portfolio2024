@@ -49,8 +49,7 @@ const Project = (props) => {
       <p className="font-semibold text-xl md:text-2xl tracking-tight mt-4">
         {props.description}
       </p>
-      {props.name !== "Projekty" && (
-        <div className="hidden md:grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 mt-4 justify-center items-center">
+        <div className=" grid grid-flow-col md:grid md:grid-cols-6 lg:grid-cols-8 gap-4 mt-4 justify-center items-center">
           {props.stack && props.stack.map((el) => (
             <Image
               key={el}
@@ -61,7 +60,6 @@ const Project = (props) => {
             />
           ))}
         </div>
-      )}
     </div>
   );
 };

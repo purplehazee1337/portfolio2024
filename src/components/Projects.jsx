@@ -11,6 +11,7 @@ import useScreenSize from '../utils/useScreenSize'
 
 const Projects = () => {
   const screenSize = useScreenSize();
+  
 
   const adjustForScreenSize = () => {
     let screenScale = [5.5, 5.5, 5.5]; // Default scale for visibility
@@ -65,7 +66,7 @@ const Projects = () => {
 
         <div style={{ position: "relative", "max-width": 620, height: 740 }}>
           <Canvas
-            className="bg-transparent cursor-pointer"
+            className={`bg-transparent cursor-pointer`}
             camera={{ position: [0, 0, 5] }} // Positioned to center the model
           >
             <Suspense fallback={null}>
@@ -79,19 +80,20 @@ const Projects = () => {
                 rotation={modelRotation}
                 video={projectData[currentProjectIndex].video}
               />
-
+            {(screenSize.width > 768) ?
               <OrbitControls
                 minDistance={1} // Allow closer zoom
                 maxDistance={10} // Allow further zoom
                 minPolarAngle={Math.PI / 2 - 0.1}
                 maxPolarAngle={Math.PI / 2 + 0.1}
                 target={[0, 0, 0]} // Center of the canvas
-                enabled={(screenSize.width > 768) ? true : false}
+                enabled= {true}
                 autoRotate={false}
                 enableZoom={false}
                 enablePan={false}
-                autoRotateSpeed={1.5}
-              />
+                autoRotateSpeed={1.5}     
+              /> : null
+              }
             </Suspense>
           </Canvas>
         </div>

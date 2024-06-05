@@ -39,9 +39,12 @@ const Hero = () => {
         loop
         muted
         playsInline
+        poster="/assets/poster.png"
         className="absolute w-full h-full object-cover"
       >
+        <source src="/assets/video/hero.webm" type="video/webm" />
         <source src="/assets/video/hero.mp4" type='video/mp4; codecs="avc1"' />
+        <p>Ten format nie jest obsługiwany w Twojej przeglądarce</p>
       </video>
       <div className="p-12 transition-all duration-1000 font-bold z-10 text-white text-center flex-1 flex flex-col items-right justify-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.5)]">
         <h1 className="text-4xl xl:text-5xl">
