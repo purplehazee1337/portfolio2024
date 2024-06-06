@@ -12,7 +12,7 @@ import * as THREE from 'three'
 const Model = (props) => {
   const { nodes, materials } = useGLTF('/assets/apple_iphone_13_pro_max.glb')
 
-  const videoTexture = useVideoTexture(`/assets/video/${props.video}.webm`);
+  const videoTexture = useVideoTexture(`/assets/video/${props.video}.mp4`);
   
   return (
     <group {...props} dispose={null}>

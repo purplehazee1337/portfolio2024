@@ -66,7 +66,7 @@ const Projects = () => {
 
         <div style={{ position: "relative", "max-width": 620, height: 740 }}>
           <Canvas
-            className={`bg-transparent cursor-pointer slideInR`}
+            className={`bg-transparent cursor-pointer slideInR z-10 hover-target`}
             camera={{ position: [0, 0, 5] }} // Positioned to center the model
           >
             <Suspense fallback={null}>
@@ -96,6 +96,7 @@ const Projects = () => {
               }
             </Suspense>
           </Canvas>
+          <div className="absolute top-1/2 left-1/2 bg-white target"></div>
         </div>
       </div>
     </section>
