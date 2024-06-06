@@ -10,7 +10,7 @@ const Project = (props) => {
   };
 
   return (
-    <div className="leading-tight text-center lg:text-left">
+    <div className="slideInL leading-tight text-center lg:text-left">
       <h3 className="font-bold text-5xl md:text-6xl flex flex-col md:flex-row justify-center lg:justify-normal">
         {props.name}
         {props.name === "Projekty" && (

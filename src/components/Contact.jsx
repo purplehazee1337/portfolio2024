@@ -54,8 +54,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="text-white bg-neutral-950">
-      <div className="min-h-screen max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col text-center justify-center items-center font-bold ">
+    <div className="text-white bg-neutral-950 polka">
+      <div className="appearIn min-h-screen max-w-7xl gap-10 mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col text-center justify-center items-center font-bold ">
       <div className="justify-center items-center font-bold text-5xl md:text-6xl">
             Kontakt
         </div>
@@ -63,7 +63,7 @@ const Contact = () => {
           <label className="flex flex-col">
           {(form.name === "") ? null : <p className="text-left animate-fade ml-2">Imię</p>}
             <input
-              className="bg-transparent my-2 rounded text-white border-2 p-2"
+              className="my-2 rounded text-white border-2 p-2 bg-neutral-950"
               type="text"
               name="name"
               placeholder="Imie"
@@ -75,7 +75,7 @@ const Contact = () => {
           <label className="flex flex-col">
           {(form.email === "") ? null : <p className=" text-left animate-fade ml-2">Email</p>}
             <input
-              className="bg-transparent my-2 rounded text-white border-2 p-2"
+              className="my-2 rounded text-white border-2 p-2 bg-neutral-950"
               type="email"
               name="email"
               placeholder="Email"
@@ -87,7 +87,7 @@ const Contact = () => {
           <label className="flex flex-col">
           {(form.message === "") ? null : <p className="text-left animate-fade ml-2">Wiadomość</p>}
             <textarea
-              className="bg-transparent my-2 rounded text-white border-2 p-2"
+              className="my-2 rounded text-white border-2 p-2 bg-neutral-950"
               name="message"
               rows="4"
               placeholder="Wiadomość ..."
@@ -96,7 +96,7 @@ const Contact = () => {
             />
           </label>
 
-          <button type="submit" disabled={loading} className=" rounded text-white border-2 p-1 my-2 text-md md:text-xl hover:bg-white hover:text-black transition-all duration-300">
+          <button type="submit" disabled={loading} className="bg-neutral-950 rounded text-white border-2 p-1 my-2 text-md md:text-xl hover:bg-white hover:text-black transition-all duration-300">
             {loading ? "Wysyłanie..." : "Wyślij"}
           </button>
         </form>

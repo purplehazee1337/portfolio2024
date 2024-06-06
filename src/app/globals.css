@@ -15,13 +15,97 @@ body {
     line-height: 1.1;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .selectable {
     -webkit-user-select: auto; /* Safari */
     -moz-user-select: auto; /* Firefox */
     -ms-user-select: auto; /* IE/Edge */
     user-select: auto;
 }
+
+/* scroll-appear-animation */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.2;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes slideL {
+    from {
+        opacity: 0;
+        transform: translateX(-40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideR {
+    from {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.appearIn {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover
+    40%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .slideInL {
+        animation: slideL linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover
+        50%;
+    }
+    .slideInR {
+        animation: slideR linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover
+        50%;
+    }
+  }
+
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a;
+  }
+.polka{
+    background-color: #0a0a0a;
+opacity: 1;
+background-image:  radial-gradient(#052026 2px, transparent 2px), radial-gradient(#052026 2px, #0a0a0a 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+}
+  

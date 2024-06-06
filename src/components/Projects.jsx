@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-neutral-950 text-white relative">
+    <section className="bg-neutral-950 text-white relative polka">
       <Image
         className="absolute z-20 top-1/2 left-5 2xl:left-36 cursor-pointer hover:opacity-60"
         src="/assets/icons/left-arrow.svg"
@@ -66,7 +66,7 @@ const Projects = () => {
 
         <div style={{ position: "relative", "max-width": 620, height: 740 }}>
           <Canvas
-            className={`bg-transparent cursor-pointer`}
+            className={`bg-transparent cursor-pointer slideInR`}
             camera={{ position: [0, 0, 5] }} // Positioned to center the model
           >
             <Suspense fallback={null}>
