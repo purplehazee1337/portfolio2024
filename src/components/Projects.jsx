@@ -7,11 +7,10 @@ import { OrbitControls } from "@react-three/drei";
 import Image from "next/image";
 import Project from "./Project";
 import projectData from "../../public/assets/projectData";
-import useScreenSize from '../utils/useScreenSize'
+import useScreenSize from "../utils/useScreenSize";
 
 const Projects = () => {
   const screenSize = useScreenSize();
-  
 
   const adjustForScreenSize = () => {
     let screenScale = [5.5, 5.5, 5.5]; // Default scale for visibility
@@ -63,13 +62,12 @@ const Projects = () => {
           github={projectData[currentProjectIndex].github}
           stack={projectData[currentProjectIndex].stack}
         />
-
-        <div style={{ position: "relative", "max-width": 620, height: 740 }}>
-          <Canvas
-            className={`bg-transparent cursor-pointer slideInR z-10 hover-target`}
-            camera={{ position: [0, 0, 5] }} // Positioned to center the model
-          >
-            <Suspense fallback={null}>
+        <Suspense fallback={<div class="loader"></div>}>
+          <div style={{ position: "relative", "max-width": 620, height: 740 }}>
+            <Canvas
+              className={`bg-transparent cursor-pointer slideInR z-10 hover-target`}
+              camera={{ position: [0, 0, 5] }} // Positioned to center the model
+            >
               <directionalLight position={[1, 1, 1]} intensity={2} />
               <directionalLight position={[-1, 1, -1]} intensity={2} />
               <ambientLight intensity={0.5} />
@@ -80,24 +78,24 @@ const Projects = () => {
                 rotation={modelRotation}
                 video={projectData[currentProjectIndex].video}
               />
-            {(screenSize.width > 768) ?
-              <OrbitControls
-                minDistance={1} // Allow closer zoom
-                maxDistance={10} // Allow further zoom
-                minPolarAngle={Math.PI / 2 - 0.1}
-                maxPolarAngle={Math.PI / 2 + 0.1}
-                target={[0, 0, 0]} // Center of the canvas
-                enabled= {true}
-                autoRotate={false}
-                enableZoom={false}
-                enablePan={false}
-                autoRotateSpeed={1.5}     
-              /> : null
-              }
-            </Suspense>
-          </Canvas>
-          <div className="absolute top-1/2 left-1/2 bg-white target"></div>
-        </div>
+              {screenSize.width > 768 ? (
+                <OrbitControls
+                  minDistance={1} // Allow closer zoom
+                  maxDistance={10} // Allow further zoom
+                  minPolarAngle={Math.PI / 2 - 0.1}
+                  maxPolarAngle={Math.PI / 2 + 0.1}
+                  target={[0, 0, 0]} // Center of the canvas
+                  enabled={true}
+                  autoRotate={false}
+                  enableZoom={false}
+                  enablePan={false}
+                  autoRotateSpeed={1.5}
+                />
+              ) : null}
+            </Canvas>
+            <div className="absolute top-1/2 left-1/2 bg-white target"></div>
+          </div>
+        </Suspense>
       </div>
     </section>
   );
