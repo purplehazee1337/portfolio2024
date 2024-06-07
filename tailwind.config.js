@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '20xl': '14rem',
+        '15xl': '12rem',
+        '10xl': '8rem',
+      },
       animation: {
         fade: 'fadeIn 0.5s ease-in-out',
       },

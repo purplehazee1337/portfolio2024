@@ -29,9 +29,9 @@ const Hero = () => {
   return (
     <div
       ref={refContainer}
-      className="min-h-screen flex flex-col items-center justify-center sticky top-0 -z-10"
+      className="h-screen flex flex-col items-center justify-center sticky top-0 -z-10"
       style={{
-        transform: `translateY(-${progress * 20}vh)`
+        transform: `translateY(-${progress * 20}vh)`,
       }}
     >
       <video
@@ -46,13 +46,15 @@ const Hero = () => {
         <source src="/assets/video/hero.mp4" type='video/mp4; codecs="avc1"' />
         <p>Ten format nie jest obsługiwany w Twojej przeglądarce</p>
       </video>
-      <div className="p-12 transition-all duration-1000 font-bold z-10 text-white text-center flex-1 flex flex-col items-right justify-center drop-shadow-[0_5px_3px_rgba(0,0,0,0.5)]">
-        <h1 className="text-4xl xl:text-5xl">
-          Wojciech Jechowski
+      <div className="flex flex-1 items-center break-all leading-none">
+        <h1 className="text-7xl sm:text-10xl md:text-15xl lg:text-20xl p-10 transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
+          WOJCIECH
+          <br />
+          JECHOWSKI
+          <p className="text-2xl lg:text-5xl transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
+          FULLSTACK DEV
+          </p>
         </h1>
-        <h2 className="text-2xl xl:text-3xl tracking-tight">
-          Fullstack developer
-        </h2>
       </div>
       <div
         className={`flex-grow-0 z-10 pb-20 transition-all duration-1000 ${
@@ -61,14 +63,15 @@ const Hero = () => {
       >
         <Image
           src="/assets/icons/arrow-down.svg"
-          width={100 / 3}
-          height={100 / 3}
+          width={100 / 2}
+          height={100 / 2}
           alt="scroll-down"
           onLoad={handleImgLoaded}
+          className="animate-bounce bg-white/10 rounded-full p-1"
         />
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
