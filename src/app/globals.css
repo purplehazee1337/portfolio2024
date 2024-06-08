@@ -110,10 +110,6 @@ body {
   ::-webkit-scrollbar-thumb {
     background: #ffffff;
   }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0a0a0a;
-  }
 
 /* Loader */
 .loader {
