@@ -18,7 +18,7 @@ const Navbar = () => {
           : "opacity-100 translate-y-0 z-50"
       }`}
     >
-      <ul className="flex flex-row gap-4 bg-white px-10 md:px-20 py-1 rounded-t-full text-2xl">
+      <ul className="flex flex-row gap-4 bg-white px-20 py-1 rounded-t-full text-2xl">
         <li>
           <a href="#main">
             <FontAwesomeIcon icon={faHouse} className="hover:text-cyan-800"/>
