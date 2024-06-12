@@ -55,7 +55,7 @@ const Projects = () => {
         alt="scroll-right"
         onClick={handleNextProject}
       />
-      <div className="min-h-screen max-w-7xl mx-auto px-10 lg:px-20 py-auto flex flex-col lg:flex-row justify-center items-center lg:gap-10">
+      <div className="min-h-screen max-w-7xl mx-auto px-10 lg:px-20 py-auto md:pb-20 flex flex-col lg:flex-row justify-center items-center lg:gap-10">
         <Project
           name={projectData[currentProjectIndex].name}
           description={projectData[currentProjectIndex].description}
