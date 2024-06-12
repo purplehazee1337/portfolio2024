@@ -66,7 +66,7 @@ const Contact = () => {
               className="my-2 rounded text-white border-2 p-2 bg-neutral-950"
               type="text"
               name="name"
-              placeholder="Imie"
+              placeholder="Imię"
               required
               value={form.name}
               onChange={handleChange}
