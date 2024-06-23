@@ -40,16 +40,16 @@ const About = () => {
       <div className="min-h-screen max-w-6xl mx-auto px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl tracking-tight font-semibold">
         <div className="leading-tight">
           <div style={{ opacity: opacityForBlock(progress, 0) }}>
-            Jestem absolwentem technikum graficzno-poligraficznego i aktualnie
-            studiuje na <span className="text-red-400">akademii&nbsp;WIT</span> w Warszawie na kierunku informatyka.
+            Jestem absolwentem technikum graficzno-poligraficznego i&nbsp;aktualnie
+            studiuje na&nbsp;<span className="text-red-400">akademii&nbsp;WIT</span> w&nbsp;Warszawie na&nbsp;kierunku informatyka.
           </div>
           <div style={{ opacity: opacityForBlock(progress, 1) }}>
-            Interesuje się projektowaniem stron internetowych jak i ich
+            Interesuje się projektowaniem stron internetowych jak i&nbsp;ich
             tworzeniem od <span className="text-blue-400">2022&nbsp;roku</span>. 
           </div>
           <div style={{ opacity: opacityForBlock(progress, 2) }}>
-            Na tą chwile rozwijam się w zakresie języka programowania <span className="text-yellow-400">JavaScript </span>
-            i technologii mu bliskich obejmujących frontend jak i backend.
+            Na tą chwile rozwijam się w&nbsp;zakresie języka programowania <span className="text-yellow-400">JavaScript </span>
+            i&nbsp;technologii mu&nbsp;bliskich obejmujących frontend jak i&nbsp;backend.
           </div>
         </div>
       </div>
