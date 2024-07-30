@@ -20,12 +20,12 @@ const Navbar = () => {
     >
       <ul className="flex flex-row gap-4 bg-white px-20 py-1 rounded-t-full text-2xl">
         <li>
-          <a href="#main">
+          <a href="#">
             <FontAwesomeIcon icon={faHouse} className="hover:text-cyan-800"/>
           </a>
         </li>
         <li>
-          <a href="#about">
+          <a href="#main">
             <FontAwesomeIcon icon={faUser} className="hover:text-cyan-800"/>
           </a>
         </li>

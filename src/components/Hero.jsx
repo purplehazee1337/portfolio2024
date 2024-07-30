@@ -43,16 +43,19 @@ const Hero = () => {
         className="absolute w-full h-full object-cover"
       >
         <source src="/assets/video/hero.webm" type="video/webm" />
-        <source src="/assets/video/hero.mp4" type='video/mp4; codecs="avc1"' />
+        <source
+          src="/assets/video/hero.mp4"
+          type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+        />
         <p>Ten format nie jest obsługiwany w Twojej przeglądarce</p>
       </video>
       <div className="flex flex-1 items-center break-all leading-none">
-        <h1 className="text-7xl sm:text-10xl md:text-15xl lg:text-20xl p-10 transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
+        <h1 className="text-7xl sm:text-10xl  p-10 transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
           WOJCIECH
           <br />
           JECHOWSKI
-          <p className="text-2xl lg:text-5xl transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
-          FULLSTACK DEV
+          <p className="text-2xl lg:text-4xl transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
+            PORTFOLIO
           </p>
         </h1>
       </div>
@@ -67,7 +70,7 @@ const Hero = () => {
           height={100 / 2}
           alt="scroll-down"
           onLoad={handleImgLoaded}
-          className="animate-bounce bg-white/10 rounded-full p-1"
+          className="animate-bounce"
         />
       </div>
     </div>
