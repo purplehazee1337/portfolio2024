@@ -52,7 +52,7 @@ const Project = (props) => {
           </div>
         )}
       </h3>
-      <p className="font-semibold text-xl md:text-2xl tracking-tight mt-4">
+      <p className="font-semibold text-xl md:text-2xl tracking-tight mt-4 text-left">
         {props.description}
       </p>
       <div className=" grid grid-flow-col md:grid-cols-6 lg:grid-cols-8 gap-4 mt-4 justify-center items-center">

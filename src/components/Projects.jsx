@@ -64,7 +64,7 @@ const Projects = () => {
           stack={projectData[currentProjectIndex].stack}
         />
 
-        <div style={{ position: "relative", "max-width": 620, height: 740 }}>
+        <div style={{ position: "relative", maxWidth: 620, height: 740 }}>
           <Canvas
             className={`bg-transparent cursor-pointer slideInR z-10 hover-target`}
             camera={{ position: [0, 0, 5] }} // Positioned to center the model

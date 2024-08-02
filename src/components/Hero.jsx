@@ -55,7 +55,7 @@ const Hero = () => {
           <br />
           JECHOWSKI
           <p className="text-2xl lg:text-4xl transition-all duration-1000 font-black mix-blend-difference z-10 text-white text-right">
-            PORTFOLIO
+            {/* PORTFOLIO */}
           </p>
         </h1>
       </div>
