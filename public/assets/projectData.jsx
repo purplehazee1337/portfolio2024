@@ -1,9 +1,36 @@
 let projectData = [
   {
     name: "Projekty",
-    description: "Wszystkie moje projekty znajduja sie na moim profilu github.",
+    description: "Wszystkie moje projekty znajduja sie na moim profilu github. Niektóre mogą być prywatne.",
     video: "projekt",
     url: "https://github.com/purplehazee1337",
+  },
+  {
+    name: "Project-manager",
+    description:
+      "Aplikacja służy do organizacji pracy nad projektami poprzez tworzenie projektów i zapisywania w nich zadan do zrobienia.",
+    video: "project-manager",
+    github: "https://github.com/purplehazee1337/Project-Manager",
+    url: "https://project-manager-cwgnhutqd-purplehazee1337s-projects.vercel.app/",
+    stack: [
+      "javascript.png",
+      "vite.svg",
+      "Tailwind.png",
+      "react.png"
+    ],
+  },
+  {
+    name: "PolishingCars",
+    description:
+      "Strona stworzona w celu reprezentacji firmy PolishingCars w internecie. Pełni ona forme wizytówki i zawiera podstawowe informacje o firmie i jej usługach. Jest ona responsywna do urządzeń mobilnych.",
+    video: "polishingcars",
+    github: "https://github.com/purplehazee1337",
+    url: "https://polishingcars.pl/",
+    stack: [
+      "html.png",
+      "css.png",
+      "javascript.png"
+    ],
   },
   {
     name: "Retroauta",
