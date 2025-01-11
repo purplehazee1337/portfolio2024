@@ -18,8 +18,8 @@ const Main = () => {
           <div className="mt-6 flex flex-row text-lg min-w-screen justify-center lg:justify-normal flex-wrap">
             <a
               className="bg-white text-black py-3 px-6 mr-5 my-1 flex flex-row justify-center items-center rounded-md font-bold hover:opacity-50 cursor-pointer"
-              href="/assets/cv.pdf"
-              download="cv"
+              href="/assets/CV - Wojciech Jechowski - eng.pdf"
+              download="CV - Wojciech Jechowski - eng"
             >
               <Image
                 src="/assets/logos/file.svg"
