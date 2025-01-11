@@ -1,9 +1,24 @@
 let projectData = [
   {
     name: "Projekty",
-    description: "Wszystkie moje projekty znajduja sie na moim profilu github. Niektóre mogą być prywatne.",
+    description: "Wszystkie moje projekty znajduja sie na moim profilu github.",
     video: "projekt",
     url: "https://github.com/purplehazee1337",
+  },
+  {
+    name: "React scheduler",
+    description:
+      "Aplikacja umożliwająca planowanie spotkań. ",
+    video: "react-scheduler",
+    github: "https://github.com/purplehazee1337/react-scheduler",
+    url: "https://react-scheduler-sable.vercel.app/",
+    stack: [
+      "javascript.png",
+      "vite.svg",
+      "firebase.png",
+      "react.png",
+      "mui.png"
+    ],
   },
   {
     name: "Project-manager",
