@@ -17,7 +17,7 @@ let projectData = [
       "vite.svg",
       "react.png",
       "motion.png",
-      "tailwind.png"
+      "Tailwind.png"
     ],
   },
   {
