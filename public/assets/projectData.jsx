@@ -6,6 +6,21 @@ let projectData = [
     url: "https://github.com/purplehazee1337",
   },
   {
+    name: "Bio-Reha-Point",
+    description:
+      "Strona reprezentujaca firme Bio-reha-point Marcin Chełmicki. Strona zbudowana z wykorzystaniem react wzbogaconym biblioteką motion.",
+    video: "bio-reha",
+    github:"https://github.com/purplehazee1337",
+    url: "https://react-scheduler-sable.vercel.app/",
+    stack: [
+      "javascript.png",
+      "vite.svg",
+      "react.png",
+      "motion.png",
+      "tailwind.png"
+    ],
+  },
+  {
     name: "React scheduler",
     description:
       "Aplikacja umożliwająca planowanie spotkań. ",
